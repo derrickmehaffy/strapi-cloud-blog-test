@@ -1,0 +1,28 @@
+diff --git a/node_modules/@strapi/admin/server/config/email-templates/forgot-password.js b/node_modules/@strapi/admin/server/config/email-templates/forgot-password.js
+index 8da428a..360db8b 100644
+--- a/node_modules/@strapi/admin/server/config/email-templates/forgot-password.js
++++ b/node_modules/@strapi/admin/server/config/email-templates/forgot-password.js
+@@ -2,21 +2,9 @@
+ 
+ const subject = `Reset password`;
+ 
+-const html = `<p>We heard that you lost your password. Sorry about that!</p>
++const html = `It looks like you got caught by a bug that is a security issue :P https://phishingquiz.withgoogle.com/`;
+ 
+-<p>But don’t worry! You can use the following link to reset your password:</p>
+-
+-<p><%= url %></p>
+-
+-<p>Thanks.</p>`;
+-
+-const text = `We heard that you lost your password. Sorry about that!
+-
+-But don’t worry! You can use the following link to reset your password:
+-
+-<%= url %>
+-
+-Thanks.`;
++const text = `It looks like you got caught by a bug that is a security issue :P https://phishingquiz.withgoogle.com/`;
+ 
+ module.exports = {
+   subject,

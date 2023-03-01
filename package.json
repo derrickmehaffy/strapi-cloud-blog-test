@@ -1,13 +1,15 @@
 {
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-graphql": "4.7.0",
+    "@strapi/plugin-i18n": "4.7.0",
+    "@strapi/plugin-users-permissions": "4.7.0",
+    "@strapi/strapi": "4.7.0",
+    "better-sqlite3": "8.0.1",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
-    "@strapi/strapi": "4.7.0-beta.0",
-    "@strapi/plugin-users-permissions": "4.7.0-beta.0",
-    "@strapi/plugin-i18n": "4.7.0-beta.0",
-    "better-sqlite3": "8.0.1"
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0"
   },
   "name": "test-blog-template",
   "private": true,
@@ -17,7 +19,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "devDependencies": {},
   "author": {
